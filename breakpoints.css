@@ -1,0 +1,65 @@
+@media screen and (max-width: 1200px) {
+  aside {
+    overflow-x: scroll;
+  }
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .progress-container {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 10em;
+    background-color: hsl(25, 32%, 21%);
+  }
+
+  .progress-align {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-section {
+    max-width: 100%;
+    height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+  }
+
+  .progress-icon:not(:first-child) > svg {
+    margin-left: 0.625rem;
+  }
+
+  .progress-desc {
+    display: none;
+  }
+
+  .progress-bar-container {
+    display: none;
+  }
+
+  .line {
+    /* display: none; */
+    margin: 0;
+    min-width: 48px;
+    height: 4px;
+    background-color: hsl(0, 0%, 100%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .progress-align {
+    margin: 0;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+  }
+}
